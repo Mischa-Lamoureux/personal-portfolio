@@ -56,22 +56,18 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Send a message
-            </a>
-          </article>
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>messengername</h5>
-            <a href="https://google.com" target="_blank" rel="noreferrer">
-              Send a message
+              Send an email
             </a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
-            <h5>506-345-345</h5>
-            <a href="https://google.com" target="_blank" rel="noreferrer">
+            <h5>(587) 830-2063</h5>
+            <a
+              href="https://api.whatsapp.com/send?phone=5878302063"
+              target="_blank"
+              rel="noreferrer"
+            >
               Send a message
             </a>
           </article>

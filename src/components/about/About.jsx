@@ -1,9 +1,7 @@
 import React from "react";
 import "./about.css";
 import MISCHA from "../../assets/mischa-lamoureux-about.jpeg";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import { TbAward, TbPencil, TbSchool } from "react-icons/tb";
 
 const About = () => {
   return (
@@ -20,19 +18,19 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Dev Experience</h5>
+              <TbAward className="about__icon" />
+              <h5>Development Experience</h5>
               <small>4+ Years</small>
             </article>
 
             <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Projects</h5>
-              <small>5+ Completed</small>
+              <TbPencil className="about__icon" />
+              <h5>Personal Projects</h5>
+              <small>10+ Completed</small>
             </article>
 
             <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
+              <TbSchool className="about__icon" />
               <h5>Co-op Terms</h5>
               <small>2/6 Completed</small>
             </article>
