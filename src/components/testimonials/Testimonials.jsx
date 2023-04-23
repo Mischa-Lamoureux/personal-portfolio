@@ -22,20 +22,20 @@ const data = [
     review:
       "Mischa’s work was always completed in the spirit of bettering the greater community, and his technical prowess facilitated an aesthetic experience that was both functional and visually appealing. He collaborated with our team and helped me to set timelines, troubleshoot, design, debug, and relate the game experience to a user's point of view. Mischa is a gifted communicator, a well-organized, technically adept, and intuitive mentor who is able to lean intentionally into innovation with a positive attitude and a fail-forward approach.",
   },
-  {
-    avatar: MOHAMED,
-    name: "Mohamed Hassan",
-    company: "Swap Robotics",
-    review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis expedita nemo est fugiat dolores harum magnam! Repellendus ipsum neque asperiores delectus? Ad, minus soluta magni ullam perferendis rerum aliquid.",
-  },
-  {
-    avatar: NICK,
-    name: "Nick Kidd",
-    company: "Mitch Insurance",
-    review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis expedita nemo est fugiat dolores harum magnam! Repellendus ipsum neque asperiores delectus? Ad, minus soluta magni ullam perferendis rerum aliquid.",
-  },
+  // {
+  //   avatar: MOHAMED,
+  //   name: "Mohamed Hassan",
+  //   company: "Swap Robotics",
+  //   review:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis expedita nemo est fugiat dolores harum magnam! Repellendus ipsum neque asperiores delectus? Ad, minus soluta magni ullam perferendis rerum aliquid.",
+  // },
+  // {
+  //   avatar: NICK,
+  //   name: "Nick Kidd",
+  //   company: "Mitch Insurance",
+  //   review:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis expedita nemo est fugiat dolores harum magnam! Repellendus ipsum neque asperiores delectus? Ad, minus soluta magni ullam perferendis rerum aliquid.",
+  // },
 ];
 
 const Testimonials = () => {
