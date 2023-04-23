@@ -1,6 +1,5 @@
 import React from "react";
 import "./testimonials.css";
-import CLIENT from "../../assets/me-about.jpg";
 import STEFAN from "../../assets/stefan-rasporich.png";
 import MOHAMED from "../../assets/mohamed-hassan.jpeg";
 import NICK from "../../assets/nick-kidd.jpeg";
