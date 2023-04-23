@@ -1,18 +1,43 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const form = useRef();
+  const [isSubmitLoading, setIsSubmitLoading] = useState(false);
+  const [isSubmitSuccessful, setIsSubmitSuccessful] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
-  // ** ADD SOME SORT OF LOADING & SUCCESS
   const sendEmail = (e) => {
     e.preventDefault();
-
-    // EMAIL JS HERE
+    setIsSubmitLoading(true);
+    emailjs
+      .sendForm(
+        "service_9cjeuvm",
+        "template_1rrhuti",
+        form.current,
+        "oJ3Vi_p31FGPELxID"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsSubmitSuccessful(true);
+          setIsSubmitLoading(false);
+          e.target.reset();
+        },
+        (error) => {
+          console.error(error.text);
+          setHasError(true);
+          setIsSubmitLoading(false);
+          setTimeout(() => {
+            setHasError(false);
+          }, 5000);
+        }
+      );
   };
 
   return (
@@ -25,7 +50,7 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>mischalamoureux7@gmail.com</h5>
+            <h5 className="contact__email">mischalamoureux7@gmail.com</h5>
             <a
               href="mailto:mischalamoureux7@gmail.com"
               target="_blank"
@@ -61,8 +86,19 @@ const Contact = () => {
             placeholder="Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
+          <ReCAPTCHA sitekey="6LcWqrAlAAAAAIchINR-cIlG9PyRexr3PaKCo75s" />
+          <button
+            type="submit"
+            className={`btn btn-primary ${
+              hasError ? "contact__button-error" : "contact__button-success"
+            }`}
+            disabled={isSubmitLoading || isSubmitSuccessful || hasError}
+          >
+            {hasError
+              ? "Something went wrong! Try again or email me directly."
+              : isSubmitSuccessful
+              ? "Message Sent!"
+              : "Send Message"}
           </button>
         </form>
       </div>
