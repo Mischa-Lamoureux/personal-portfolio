@@ -6,20 +6,12 @@ import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
 
-  // const navigate = useNavigate();
-
-  // function handleClick() {
-  //   navigate("#about");
-  // }
-
   return (
     <nav>
-      {/* <button onClick={handleClick}>TEST2</button> */}
       <a
         href="#"
         onClick={() => setActiveNav("#")}
@@ -41,13 +33,13 @@ const Nav = () => {
       >
         <BiBook />
       </a>
-      <a
+      {/* <a
         href="#services"
         onClick={() => setActiveNav("#services")}
         className={activeNav === "#services" ? "active" : ""}
       >
         <RiServiceLine />
-      </a>
+      </a> */}
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}

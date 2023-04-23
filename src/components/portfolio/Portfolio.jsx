@@ -9,42 +9,7 @@ const data = [
     image: CHIMEIN,
     title: "Chime-in",
     github: "https://github.com/Mischa-Lamoureux/chimeIn",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 2,
-    image: IMG1,
-    title: "Title Two",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 3,
-    image: IMG1,
-    title: "Title Three",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 4,
-    image: IMG1,
-    title: "Title Four",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 5,
-    image: IMG1,
-    title: "Title Five",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 6,
-    image: IMG1,
-    title: "Title Six",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
+    demo: "https://github.com/Mischa-Lamoureux/chimeIn/blob/main/Chime-In%20Design%20Document.pdf",
   },
 ];
 
@@ -77,7 +42,8 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Live Demo
+                  {/* Live Demo */}
+                  Design
                 </a>
               </div>
             </article>
