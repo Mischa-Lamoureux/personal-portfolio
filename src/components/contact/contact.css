@@ -30,12 +30,23 @@
   margin-bottom: 0.5rem;
 }
 
+.contact__email {
+  word-break: break-all;
+}
+
 .contact__option a {
   margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
 }
 
+.contact__button-error {
+  background-color: var(--color-failure) !important;
+}
+
+.contact__button-success:disabled {
+  background-color: var(--color-success) !important;
+}
 /* ========= FORM ========= */
 form {
   display: flex;
@@ -52,6 +63,7 @@ textarea {
   border: 2px solid var(--color-primary-variant);
   resize: none;
   color: var(--color-white);
+  font-family: inherit;
 }
 
 /* ========= MEDIA QUERIES (MEDIUM DEVICES) ========= */
