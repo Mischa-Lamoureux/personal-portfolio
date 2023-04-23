@@ -90,7 +90,11 @@ const Contact = () => {
           <button
             type="submit"
             className={`btn btn-primary ${
-              hasError ? "contact__button-error" : "contact__button-success"
+              hasError
+                ? "contact__button-error"
+                : isSubmitSuccessful
+                ? "contact__button-success"
+                : ""
             }`}
             disabled={isSubmitLoading || isSubmitSuccessful || hasError}
           >
