@@ -86,12 +86,16 @@ const Contact = () => {
           <button
             type="submit"
             className={`btn btn-primary ${
-              hasError ? "contact__button-error" : "contact__button-success"
+              hasError
+                ? "contact__button-error"
+                : isSubmitLoading
+                ? null
+                : "contact__button-success"
             }`}
             disabled={isSubmitLoading || isSubmitSuccessful || hasError}
           >
             {hasError
-              ? "Something went wrong! Try again or email me directly."
+              ? "Error! Ensure you have completed the reCAPTCHA."
               : isSubmitSuccessful
               ? "Message Sent!"
               : "Send Message"}
