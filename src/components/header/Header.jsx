@@ -14,6 +14,7 @@ const Header = () => {
       "Climber",
       "Bookworm",
       "Tech Enthusiast",
+      "Entrepreneur",
     ];
     const shuffledArray = [...originalArray];
 

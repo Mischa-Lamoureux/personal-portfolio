@@ -17,17 +17,17 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            <a href="#experience" className="about__card">
               <TbAward className="about__icon" />
               <h5>Development Experience</h5>
               <small>4+ Years</small>
-            </article>
+            </a>
 
-            <article className="about__card">
+            <a href="#portfolio" className="about__card">
               <TbPencil className="about__icon" />
               <h5>Personal Projects</h5>
               <small>10+ Completed</small>
-            </article>
+            </a>
 
             <article className="about__card">
               <TbSchool className="about__icon" />

@@ -47,7 +47,7 @@
   background: transparent;
   border-color: var(--color-primary-variant);
   transition: var(--transition);
-  cursor: default;
+  cursor: pointer;
 }
 
 .about__icon {
@@ -57,6 +57,7 @@
 }
 
 .about__card h5 {
+  color: var(--color-white);
   font-size: 0.95rem;
 }
 

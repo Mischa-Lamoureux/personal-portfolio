@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -88,14 +87,14 @@ const Contact = () => {
             className={`btn btn-primary ${
               hasError
                 ? "contact__button-error"
-                : isSubmitSuccessful
-                ? "contact__button-success"
-                : ""
+                : isSubmitLoading
+                ? null
+                : "contact__button-success"
             }`}
             disabled={isSubmitLoading || isSubmitSuccessful || hasError}
           >
             {hasError
-              ? "Something went wrong! Try again or email me directly."
+              ? "Error! Ensure you have completed the reCAPTCHA."
               : isSubmitSuccessful
               ? "Message Sent!"
               : "Send Message"}
