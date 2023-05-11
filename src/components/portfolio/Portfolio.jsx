@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.webp";
 import CHIMEIN from "../../assets/chime-in.png";
+import PLAZAPIZZA from "../../assets/plaza-piazza.png";
 
 const data = [
   {
@@ -11,6 +11,13 @@ const data = [
     github: "https://github.com/Mischa-Lamoureux/chimeIn",
     demo: "https://github.com/Mischa-Lamoureux/chimeIn/blob/main/Chime-In%20Design%20Document.pdf",
   },
+  // {
+  //   id: 2,
+  //   image: PLAZAPIZZA,
+  //   title: "Plaza Pizza",
+  //   github: "https://github.com/Mischa-Lamoureux/plaza-pizza",
+  //   demo: "https://github.com/Mischa-Lamoureux/chimeIn/blob/main/Chime-In%20Design%20Document.pdf",
+  // },
 ];
 
 const Portfolio = () => {
