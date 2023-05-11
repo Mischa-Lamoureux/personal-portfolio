@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bd94e4c.css",
-    "main.js": "/static/js/main.443d6d88.js",
+    "main.css": "/static/css/main.f5ee6be4.css",
+    "main.js": "/static/js/main.c0b99950.js",
     "static/media/stefan-rasporich.png": "/static/media/stefan-rasporich.4baf76a567ce33f59029.png",
     "static/media/mischa-lamoureux-about.jpeg": "/static/media/mischa-lamoureux-about.ffff1249318f3186bcc2.jpeg",
     "static/media/mischa-lamoureux.png": "/static/media/mischa-lamoureux.0cac062d79e40a49f1bf.png",
-    "static/media/portfolio1.webp": "/static/media/portfolio1.f438606210e9ff5f7a43.webp",
+    "static/media/plaza-piazza.png": "/static/media/plaza-piazza.ee74f65273e5870f2ad7.png",
     "static/media/chime-in.png": "/static/media/chime-in.d8d20ece7d65e88838e9.png",
     "static/media/mohamed-hassan.jpeg": "/static/media/mohamed-hassan.ac27a5fc44ecb0397cc8.jpeg",
     "static/media/nick-kidd.jpeg": "/static/media/nick-kidd.9bd7fcdc779fb44b5d58.jpeg",
     "static/media/cv.pdf": "/static/media/cv.efec44bd2aa320a88add.pdf",
     "index.html": "/index.html",
-    "main.0bd94e4c.css.map": "/static/css/main.0bd94e4c.css.map",
-    "main.443d6d88.js.map": "/static/js/main.443d6d88.js.map"
+    "main.f5ee6be4.css.map": "/static/css/main.f5ee6be4.css.map",
+    "main.c0b99950.js.map": "/static/js/main.c0b99950.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bd94e4c.css",
-    "static/js/main.443d6d88.js"
+    "static/css/main.f5ee6be4.css",
+    "static/js/main.c0b99950.js"
   ]
 }
