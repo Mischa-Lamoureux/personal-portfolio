@@ -6,8 +6,8 @@ import { TbAward, TbPencil, TbSchool } from "react-icons/tb";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get to Know</h5>
-      <h2>About Me</h2>
+      <h5>Get to Know Me</h5>
+      <h2>About</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -17,13 +17,13 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <a href="#experience" className="about__card">
+            <a href="#experience" className="about__card about__card-clickable">
               <TbAward className="about__icon" />
               <h5>Development Experience</h5>
               <small>4+ Years</small>
             </a>
 
-            <a href="#portfolio" className="about__card">
+            <a href="#portfolio" className="about__card about__card-clickable">
               <TbPencil className="about__icon" />
               <h5>Personal Projects</h5>
               <small>10+ Completed</small>

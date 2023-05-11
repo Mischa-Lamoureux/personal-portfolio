@@ -43,7 +43,7 @@
   text-align: center;
 }
 
-.about__card:hover {
+.about__card-clickable:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   transition: var(--transition);
