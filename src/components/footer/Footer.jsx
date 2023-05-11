@@ -50,9 +50,6 @@ const Footer = () => {
         >
           <FaGithub />
         </a>
-        {/* <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-          <BsLinkedin />
-        </a> */}
       </div>
 
       <div className="footer__copyright">
