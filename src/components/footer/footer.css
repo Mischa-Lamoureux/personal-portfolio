@@ -41,6 +41,10 @@ footer a {
   border: 1px solid transparent;
 }
 
+.footer__socials a:hover {
+  color: var(--color-primary);
+}
+
 .footer__copyright {
   margin-bottom: 4rem;
   color: var(--color-bg);
