@@ -1,7 +1,7 @@
 import React from "react";
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaPython, FaNodeJs } from "react-icons/fa";
 import {
   SiJavascript,
   SiHtml5,
@@ -81,6 +81,13 @@ const Experience = () => {
         <div className="experience__backend">
           <h3>Backend Development</h3>
           <div className="experience__content">
+            <article className="experience__details">
+              <FaPython className="experience__details-icon" />
+              <div>
+                <h4>Python</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
             <article className="experience__details">
               <FaNodeJs className="experience__details-icon" />
               <div>
