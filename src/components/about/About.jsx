@@ -32,7 +32,7 @@ const About = () => {
             <article className="about__card">
               <TbSchool className="about__icon" />
               <h5>Co-op Terms</h5>
-              <small>2/6 Completed</small>
+              <small>4/6 Completed</small>
             </article>
           </div>
 
