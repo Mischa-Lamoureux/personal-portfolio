@@ -37,7 +37,7 @@ const About = () => {
           </div>
 
           <p>
-            Hi, I’m Mischa! I’m a second-year Computer Engineering student at
+            Hi, I’m Mischa! I’m a third-year Computer Engineering student at
             the University of Waterloo.
           </p>
 
