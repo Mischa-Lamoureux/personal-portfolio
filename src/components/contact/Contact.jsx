@@ -81,7 +81,7 @@ const Contact = () => {
             placeholder="Message"
             required
           ></textarea>
-          <ReCAPTCHA sitekey="6LcWqrAlAAAAAIchINR-cIlG9PyRexr3PaKCo75s" />
+          {!isSubmitSuccessful && <ReCAPTCHA sitekey="6LcWqrAlAAAAAIchINR-cIlG9PyRexr3PaKCo75s" />}
           <button
             type="submit"
             className={`btn btn-primary ${
