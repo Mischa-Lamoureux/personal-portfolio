@@ -1,14 +1,30 @@
 import React from "react";
 import "./portfolio.css";
 import CHIMEIN from "../../assets/chime-in.png";
+import AICRO from "../../assets/aicro.png";
 
 const data = [
   {
     id: 1,
+    image: AICRO,
+    title: "AICRO Uganda",
+    primary: {
+      name: "View",
+      link: "https://www.aicro-uganda.org/",
+    },
+  },
+  {
+    id: 2,
     image: CHIMEIN,
     title: "Chime-in",
-    github: "https://github.com/Mischa-Lamoureux/chimeIn",
-    demo: "https://github.com/Mischa-Lamoureux/chimeIn/blob/main/Chime-In%20Design%20Document.pdf",
+    secondary: {
+      name: "GitHub",
+      link: "https://github.com/Mischa-Lamoureux/chimeIn",
+    },
+    primary: {
+      name: "View",
+      link: "https://github.com/Mischa-Lamoureux/chimeIn/blob/main/Chime-In%20Design%20Document.pdf",
+    },
   },
 ];
 
@@ -19,7 +35,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
+        {data.map(({ id, image, title, secondary, primary }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
@@ -28,22 +44,23 @@ const Portfolio = () => {
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
                 <a
-                  href={github}
-                  className="btn"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
+                  href={primary["link"]}
                   className="btn btn-primary"
                   target="_blank"
                   rel="noreferrer"
-                >
-                  {/* Live Demo */}
-                  Design
+                  >
+                  {primary["name"]}
                 </a>
+                  {secondary && (
+                    <a
+                      href={secondary["link"]}
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {secondary["name"]}
+                    </a>
+                  )}
               </div>
             </article>
           );
